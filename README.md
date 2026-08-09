@@ -63,23 +63,23 @@ git =clone https://github.com/king234-coder/weather-app.git
 
 3. Run `index.html` in browser
 
-## 🔗 APIs Used
+**## 🔗 APIs Used**
 
 * [https://open-meteo.com/](https://open-meteo.com/)
 
-## 💡 Future Improvements
-
+**## 💡 Future Improvements
+**
 * 📱 Mobile optimization
 * 🌍 Auto location detection (GPS)
 * 🔊 Weather sound effects
 * 🎨 Theme switcher
 
-## 🙌 Author
-
+**## 🙌 Author
+**
 Made with ❤️ by Muhammad Salman Tahir
 
-## ⭐ Support
-
+**## ⭐ Support
+**
 If you like this project:
 
 👉 Give it a ⭐ on GitHub
