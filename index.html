@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Live Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==============================
+       BACKGROUND VIDEO
+  =============================== -->
+
+  <video
+    id="bgVideo"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+  ></video>
+
+  <div class="video-overlay"></div>
+
+
+  <!-- ==============================
+       APP
+  =============================== -->
+
+  <main class="app">
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+  <div class="brand">
+    <div class="brand-icon">
+      <img src="./weather-app.png" alt="Live Weather">
+    </div>
+
+    <div class="brand-text">
+      <h1>Atmos</h1>
+      <span>Live Weather</span>
+    </div>
+  </div>
+</header>
+
+
+    <!-- ==============================
+         HERO
+    =============================== -->
+
+    <section class="hero">
+
+      <p class="eyebrow">
+        WEATHER AT YOUR LOCATION
+      </p>
+
+      <h2>
+        Know your sky.
+      </h2>
+
+      <p class="subtitle">
+        Search any city and experience its weather visually.
+      </p>
+
+
+      <!-- SEARCH -->
+
+      <form
+        class="search-box"
+        id="searchForm"
+      >
+
+        <span class="search-icon">
+          ⌕
+        </span>
+
+        <input
+          id="cityInput"
+          type="text"
+          placeholder="Search city..."
+          autocomplete="off"
+          spellcheck="false"
+        >
+
+        <button
+          type="submit"
+          id="searchBtn"
+        >
+          Search
+        </button>
+
+      </form>
+
+
+      <!-- ERROR -->
+
+      <p
+        id="error"
+        class="error"
+      ></p>
+
+    </section>
+
+
+    <!-- ==============================
+         WEATHER CARD
+    =============================== -->
+
+    <section
+      class="weather-card"
+      id="weatherCard"
+    >
+
+      <!-- LOCATION -->
+
+      <div class="location">
+
+        <span class="location-dot"></span>
+
+        <span id="cityName">
+          Search a city
+        </span>
+
+        <span id="countryName"></span>
+
+      </div>
+
+
+      <!-- MAIN WEATHER -->
+
+      <div class="main-weather">
+
+        <div class="weather-main-left">
+
+          <div class="temperature">
+
+            <span id="temperature">
+              --
+            </span>
+
+            <sup>
+              °C
+            </sup>
+
+          </div>
+
+
+          <div
+            class="condition"
+            id="condition"
+          >
+            Live conditions appear here
+          </div>
+        <div class="local-time" id="localTime">--:--</div>
+        </div>
+
+
+        <div
+          class="weather-symbol"
+          id="weatherSymbol"
+        >
+          ☀
+        </div>
+
+      </div>
+
+
+      <!-- DETAILS -->
+
+      <div class="details">
+
+
+        <!-- FEELS LIKE -->
+
+        <div class="detail">
+
+          <span class="detail-icon">
+            🌡
+          </span>
+
+          <div>
+            <span class="detail-label">
+              Feels like
+            </span>
+
+            <strong>
+              <span id="feelsLike">
+                --
+              </span>
+              °C
+            </strong>
+          </div>
+
+        </div>
+
+
+        <!-- HUMIDITY -->
+
+        <div class="detail">
+
+          <span class="detail-icon">
+            💧
+          </span>
+
+          <div>
+
+            <span class="detail-label">
+              Humidity
+            </span>
+
+            <strong>
+              <span id="humidity">
+                --
+              </span>
+              %
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- WIND -->
+
+        <div class="detail">
+
+          <span class="detail-icon">
+            💨
+          </span>
+
+          <div>
+
+            <span class="detail-label">
+              Wind
+            </span>
+
+            <strong>
+              <span id="wind">
+                --
+              </span>
+              km/h
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- RAIN -->
+
+        <div class="detail">
+
+          <span class="detail-icon">
+            🌧
+          </span>
+
+          <div>
+
+            <span class="detail-label">
+              Precipitation
+            </span>
+
+            <strong>
+              <span id="rain">
+                --
+              </span>
+              mm
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer class="footer">
+
+      <div class="footer-line"></div>
+
+      <div class="footer-content">
+
+        <span>
+          © 2026 Atmos
+        </span>
+
+        <span class="footer-dot">
+          •
+        </span>
+
+        <span>
+          Crafted with weather & code
+        </span>
+
+      </div>
+
+      <div class="footer-tagline">
+        Live sky. Real conditions.
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <!-- JS -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
