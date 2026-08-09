@@ -23,8 +23,7 @@ A modern weather web app that shows real-time weather data with **dynamic backgr
 
 ## 🌐 Live Demo
 
-👉 *(Add your deployed link here)*
-
+(https://king234-coder.github.io/Weather-app/)
 ## ⚙️ How It Works
 
 1. User enters a city name
