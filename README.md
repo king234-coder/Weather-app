@@ -89,9 +89,4 @@ If you like this project:
 
 
 
----
 
-Agar chahe to main:
-
-👉 tera **repo name + description optimize** kar du
-👉 ya **portfolio level bana du** 😎🔥
