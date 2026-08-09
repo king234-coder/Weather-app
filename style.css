@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 html,
-body {
-  width: 100%;
-  min-height: 100%;
+body html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -15,6 +15,7 @@ body {
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   color: white;
   overflow-x: hidden;
+  overflow: hidden;
 
   background:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -58,8 +59,11 @@ body {
 .app {
   position: relative;
   z-index: 1;
-  width: min(1080px, calc(100% - 40px));
-  min-height: 100vh;
+width: 100%;
+max-width: 1080px;
+padding: 0 20px;  
+  height: 100dvh; 
+  
   margin: auto;
   padding: 30px 0 24px;
   display: flex;
