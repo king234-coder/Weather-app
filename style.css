@@ -15,7 +15,7 @@ body {
   font-family: Inter, "Segoe UI", Arial, sans-serif;
   color: white;
   overflow-x: hidden;
-  overflow: hidden;
+  overflow-y: auto;
 
   background:
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
